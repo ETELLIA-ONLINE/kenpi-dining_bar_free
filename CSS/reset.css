@@ -1,52 +1,52 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 16px;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     display: block;
 }
 
-.between{
+.between {
     justify-content: space-between;
     width: 100%;
 }
 
-.around{
+.around {
     justify-content: space-around;
 }
 
-.absolute{
+.absolute {
     position: absolute;
 }
 
-.relative{
+.relative {
     position: relative;
-    }
+}
 
-.fixed{
+.fixed {
     position: fixed;
 }
 
-.fd-colmn{
+.fd-colmn {
     flex-direction: column;
 }
 
-.no-wrap{
+.no-wrap {
     flex-wrap: nowrap;
 }
 
-.header-wrapper{
+.header-wrapper {
     max-width: 1920px;
     padding: 0px 210px;
     height: 100px;
@@ -56,58 +56,58 @@ a{
     padding-bottom: 20px;
 }
 
-.block{
+.block {
     display: block;
 }
 
-.align-center{
+.align-center {
     align-items: center;
 }
 
-.align-end{
+.align-end {
     align-items: flex-end;
 }
 
-.center{
+.center {
     justify-content: center;
 }
 
-.f-start{
+.f-start {
     justify-content: flex-start;
 }
 
-.f-end{
+.f-end {
     justify-content: flex-end;
 }
 
-.mr-0{
+.mr-0 {
     margin-right: 0;
 }
 
-.row-reverse{
+.row-reverse {
     flex-direction: row-reverse;
 }
 
-.ta-center{
+.ta-center {
     text-align: center;
 }
 
-.m0-auto{
+.m0-auto {
     margin: 0 auto;
 }
 
-table{
+table {
     border-collapse: collapse;
 }
 
-.space-around{
+.space-around {
     justify-content: space-around;
 }
 
-.align-start{
+.align-start {
     align-items: flex-start;
 }
 
-.block{
+.block {
     display: block;
 }

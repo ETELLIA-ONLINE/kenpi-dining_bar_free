@@ -1,19 +1,5 @@
 
 
-if (window.matchMedia('(max-width: 768px)').matches) {
-  const swiper = new Swiper(".swiper", {
-    slidesPerView: 1/* この行を追加 */,
-    // ページネーションが必要なら追加
-    pagination: {
-      el: ".swiper-pagination"
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
-});
-} 
-else if (window.matchMedia('(min-width:768px)').matches) {
   const swiper = new Swiper(".swiper", {
     slidesPerView: 4/* この行を追加 */,
     // ページネーションが必要なら追加
@@ -25,6 +11,26 @@ else if (window.matchMedia('(min-width:768px)').matches) {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
-    }
+    },
+    breakpoints: {
+      "@0.00": {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      "@0.75": {
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+      "@1.00": {
+        slidesPerView: 4,
+        spaceBetween:45,
+      },
+    },
+
+
   });
-}
+
+
+
+
+

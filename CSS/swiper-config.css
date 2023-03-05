@@ -1,24 +1,29 @@
 .swiper--wrapper {
   /* wrapperのサイズを調整 */
-  max-width: 1300px !important;
+  /* max-width: 1300px !important; */
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .swiper-wrapper {
   transition-duration: 0ms;
   margin-top: 100px;
-  /* transform: translate3d(-1109px, 0px, 0px) !important; */
+  /* transform: translate3d(-15px, 0px, 0px) !important; */
 }
 
 .swiper-slide {
   /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
   color: #ffffff;
-  width: 300px !important;
+  margin-left: 10px;
+  max-width: 345px;
   height: 350px !important;
-  margin-left: 57px;
+  margin-right: 30px !important;
   text-align: center;
   background-image: url("../img/slide-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 25px;
 }
 
 
@@ -80,7 +85,8 @@
 /* 画像サイズ調整 */
 .swiper-slide img {
   height: auto;
-  width: 100%;
+  width: 80%;
+  margin-top: 25px;
 }
 
 .swiper-button-next:after,

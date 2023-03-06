@@ -77,7 +77,7 @@
     }
 
     .big-concept {
-        transform: rotate(-90deg) translateY(-150px);
+        transform: rotate(-90deg) translateY(-91px);
     }
 
 }
@@ -180,7 +180,11 @@
         margin-bottom: 50px;
     }
 
+    .access-img-1 img:nth-child(2){
+        width: 80%;
+    }
 }
+
 
 @media screen and (max-width:1017px) {
     .news-info-inner {
@@ -215,8 +219,8 @@
         margin-right: 0;
     }
 
-    .big-concept {
-        transform: rotate(-90deg) translateY(-194px);
+    .big-concept { 
+       transform: rotate(-90deg) translateY(-124px);
 
     }
 
@@ -381,6 +385,12 @@
         font-size: 30px;
     }
 }
+@media screen and (max-width:606px) {
+    .big-concept-wrapper-3 {
+        max-width: 450px;
+    }
+
+}
 
 @media screen and (max-width:573px) {
     .concept-title {
@@ -413,6 +423,10 @@
         margin-right: 0;
         margin-bottom: 100px;
     }
+
+    .access-img-2{
+        width: 100%;
+    }
 }
 @media screen and (max-width:514px) {
     .menu-content ul li {
@@ -444,13 +458,17 @@
         font-size: 20px;
 
     }
+.slider-header-wrapper{
+    padding: 15px 5px;
+}
+
 
     .slider-header {
         font-size: 80px;
     }
 
     .img-top img {
-        width: 85%;
+        width: 95%;
         margin: 0 auto;
     }
 
@@ -464,8 +482,12 @@
         font-size: 56px;
     }
 
+    .big-concept-5{
+        left: -24px;
+    }
     .food-wrapper {
         padding: 0;
+        padding: 30px 15px;
     }
 
     .footer-menu-item a {
@@ -481,15 +503,19 @@
         max-width: 247px;
         padding-bottom: 84px;
     }
+.reverse-wrapper{
+    padding-top: 100px;
+}
 
+.reaserve-btn-wrapper{
+    padding-top: 50px;
+}
     .reserve-btn-1,
     .reserve-btn-2 {
         width: 269px;
     }
 
-    .big-concept-5 {
-        left: -10px;
-    }
+  
 }
 
 @media screen and (max-width:425px) {
@@ -497,14 +523,31 @@
         padding: 15px;
     }
     .concept-text-wrapper-1,.concept-text-wrapper{
-        margin: 0 25px;
+        margin: 0 5px;
     } 
     .slider-text {
-        margin: 0 20px;
+        margin: 0;
         text-align: left;
     }
 
     .concept-title{
-        margin-right: 0;
+        margin-right: 5px;
+    }
+
+
+
+    .reserve-btn-1{
+        margin-bottom: 57px;
+        height: 92px;
+    }
+    .reserve-btn-2{
+        height: 92px;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .access-img-1{
+        width: 100%;
     }
 }

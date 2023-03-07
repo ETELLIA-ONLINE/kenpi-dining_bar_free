@@ -172,9 +172,6 @@
 
 @media screen and (max-width:1037px) {
 
-    /* #concept{
-        padding: 16%;
-    } */
     .news-info-wrapper {
         max-width: 900px;
     }
@@ -233,17 +230,12 @@
 }
 
 @media screen and (max-width:913px) {
-
-    /* #concept{
-        padding: 123px;
-    } */
     .concept-wrapper {
         margin-right: 0;
     }
 
     .big-concept {
         transform: rotate(-90deg) translateY(-124px);
-
     }
 
 

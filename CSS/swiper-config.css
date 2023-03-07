@@ -30,14 +30,12 @@
 .swiper-button-prev,
 .swiper-button-next {
   content: "";
-
   margin-top: 50px !important;
   width: 0 !important;
 }
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-
   bottom: 0;
   content: "";
   height: 0;

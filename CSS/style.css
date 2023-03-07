@@ -71,6 +71,7 @@ header {
   width: 100%;
   z-index: -1;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .flex {
@@ -414,7 +415,9 @@ header {
 #food-1 {
   background-image: url("../img/Food.png");
   background-size: cover;
+  object-fit: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .food-wrapper {
@@ -425,9 +428,11 @@ header {
 }
 
 .slider-header-wrapper {
-  background-color: navy;
+  background-image: url("../img/navy.png");
   color: #fff;
-
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .slider-header {
@@ -462,10 +467,12 @@ header {
   background-image: url("../img/drink-background.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 #news {
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 247px;
   background: #43321D;
 }
 
@@ -561,12 +568,10 @@ header {
   max-width: 35%;
   text-align: left;
   margin-bottom: auto;
-  transform: rotate(-90deg) translateX(-185px);
+  transform: rotate(-90deg) translateX(-150px);
   padding-bottom: 200px;
   padding-top: 100px;
-
-  border-bottom: 1px solid #fff;
-
+  border-bottom: 1px solid #000;
   position: relative;
 }
 
@@ -641,11 +646,11 @@ header {
 
 }
 
-#reverse {
+#reserve {
   background: #43321D;
 }
 
-.reverse-wrapper {
+.reserve-wrapper {
   padding-top: 200px;
 }
 

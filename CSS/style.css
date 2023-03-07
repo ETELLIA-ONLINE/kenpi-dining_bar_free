@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
 .sp-header {
   display: none !important;
 }

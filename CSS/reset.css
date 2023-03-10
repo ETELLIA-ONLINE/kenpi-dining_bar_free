@@ -11,7 +11,17 @@ html {
 li {
     list-style: none;
 }
+.mb-0{
+margin-bottom: 0 !important;
+}
 
+.pb-0{
+    padding-bottom: 0 !important;
+}
+
+.pt-9{
+padding-top: 9px;
+}
 a {
     text-decoration: none;
     display: block;
@@ -48,7 +58,6 @@ a {
 
 .header-wrapper {
     max-width: 1920px;
-    padding: 0px 210px;
     height: 100px;
     align-items: center;
     height: 170px;

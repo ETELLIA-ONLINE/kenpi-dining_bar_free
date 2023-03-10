@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+
+.container {
+  margin-left: auto;
+  max-width: 1200px;
+  margin-right: auto;
+  position: relative;
+}
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -19,7 +26,7 @@ header {
 
 .header-wrapper {
   height: 100vh;
-  width: 20%;
+  width: 25%;
   background: #7A3123;
   margin-right: auto;
 }
@@ -74,6 +81,9 @@ header {
   background-size: cover;
   object-fit: cover;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: -1;
   background-position: center;
   background-repeat: no-repeat;
@@ -90,28 +100,32 @@ header {
   aspect-ratio: 1;
   width: min(100%, 600px);
   margin: 0 auto;
-  margin-top: 200px;
   vertical-align: middle;
 }
 
 #concept {
   background-color: #43321D;
+  
   width: 100%;
-  height: 100%;
-  padding: 254px;
-  padding-bottom: 600px;
+  height:120vh;
+  margin: 0 auto;
 }
-
+.concept-container{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 10%;
+  display: flex;
+}
 .concept-wrapper {
+  max-width: 1320px;
   width: 100%;
   background-color: #A8A18C;
   height: 584px;
   margin: 0 auto;
-  margin-right: -80px;
+  margin-right: 10%;
   text-align: right;
   flex-direction: row-reverse;
   justify-content: space-between;
-
 }
 
 .concept-img-wrapper {
@@ -173,14 +187,12 @@ header {
 
 .concept-text {
   display: inline-block;
-
   writing-mode: vertical-rl;
   font-family: 'Noto Serif JP';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   vertical-align: top;
-  letter-spacing: -3px;
   line-height: 20px;
   margin-top: 44px;
   margin-bottom: 63px;
@@ -195,7 +207,7 @@ header {
   font-family: 'Smooch';
   font-style: normal;
   position: absolute;
-  right: 10%;
+  right: 20%;
   transform: matrix(0.91, -0.42, 0.43, 0.9, 0, 0);
   margin-top: -5%;
   font-weight: 400;
@@ -204,7 +216,6 @@ header {
   /* or 157% */
   width: min(100%, 429px);
   text-align: center;
-
   color: #F4F4F4;
 }
 
@@ -212,12 +223,12 @@ header {
 .img-top {
   position: relative;
   margin-top: -20px;
-  transform: translateX(113px);
+  transform: translateX(81px);
   margin-top: -50px
 }
 
 .left-adjust {
-  transform: translateX(300px);
+  transform: translateX(221px);
   margin-top: 100px;
 }
 
@@ -261,7 +272,6 @@ header {
   top: 30px;
   left: 30px;
   border: 2px solid #fff;
-
 }
 
 .big-concept {
@@ -269,13 +279,12 @@ header {
   font-style: normal;
   font-weight: 700;
   font-size: 108px;
+  width: 100%;
+
   line-height: 0px;
   color: #AD4533;
-  position: absolute;
-  bottom: 62%;
 
-  left: -43px;
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translateX(-72%);
 }
 
 .big-concept::after {
@@ -284,7 +293,7 @@ header {
   position: absolute;
   border-bottom: 1px solid #fff;
   width: 100%;
-  bottom: -80px;
+  bottom: -100px;
 }
 
 .big-concept-2 {
@@ -306,10 +315,12 @@ header {
   background: #fff;
   height: 1px;
   width: 800px;
-  top: -100px;
+  top: -109px;
   left: -450px;
 }
-
+.slide-img-wrapper{
+  height: 100%;
+}
 .foo .slide-img-wrapper img {
   width: 240px;
   height: 160px;
@@ -325,9 +336,7 @@ header {
   font-size: 16px;
   line-height: 20px;
   /* or 125% */
-
   text-align: center;
-
   color: #F2F2F2;
 }
 
@@ -421,18 +430,26 @@ header {
   background-image: url("../img/Food.png");
   background-size: cover;
   object-fit: cover;
+  
   background-position: center;
   background-repeat: no-repeat;
 }
-
-.food-wrapper {
-  background-color: rgba(0, 0, 0, 0.5);
+.food-container{
   height: 100%;
   width: 100%;
-  padding: 90px 210px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.food-wrapper {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding-top: 100px;
+ height: 100%;
+  width: 100%;
+  padding-bottom: 90px ;
 }
 
 .slider-header-wrapper {
+
   background-image: url("../img/navy.png");
   color: #fff;
   background-size: cover;
@@ -449,11 +466,8 @@ header {
   font-size: 110px;
   line-height: 110px;
   /* or 100% */
-
   text-align: center;
-
   color: #F2F2F2;
-
 }
 
 .slider-text {
@@ -463,7 +477,6 @@ header {
   font-size: 16px;
   line-height: 24px;
   /* identical to box height */
-
   text-align: center;
 }
 
@@ -477,42 +490,47 @@ header {
 
 #news {
   height: 100%;
-  padding-bottom: 247px;
+  padding-bottom: 168px;
   background: #43321D;
 }
 
 .big-concept-wrapper {
-  max-width: 50%;
   text-align: left;
   margin-left: auto;
-  padding-bottom: 300px;
-  border-bottom: 1px solid #fff;
-
   position: relative;
 }
-
+.big-concept-wrapper-3 {
+  text-align: left;
+  margin:0;
+  margin-left: auto;
+max-width: 764px;
+  position: relative;
+}
 .big-concept-3 {
-  position: absolute;
   top: 200px;
   font-family: 'Noto Sans Arabic';
   font-style: normal;
   font-weight: 700;
   font-size: 108px;
   line-height: 0px;
+  padding-top: 150px;
   color: #AD4533;
 }
-
+.big-concept-3::after{
+  content: "";
+  width: 100%;
+  display: block;
+  bottom: -100px;
+  height: 2px;
+  position: absolute;
+  border-bottom: 1px solid #fff;
+}
 .news-info-wrapper {
   background: #A8A18C;
   max-width: 1500px;
-
-
   height: 484px;
-
-
-
-
   margin: 100px auto;
+  margin-top: 250px;
 }
 
 
@@ -520,7 +538,6 @@ header {
   margin: 0 auto;
   max-width: 1110px;
   height: 320px;
-
   margin: 0 auto;
   transform: translateY(80px);
   /* background-color: #0a467d; */
@@ -562,16 +579,19 @@ header {
 #access {
   background: #A8A18C;
   padding-bottom: 157px;
-  padding-right: 213px;
+
 
 }
-
+.access-img-wrapper{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: 213px;
+}
 .big-concept-wrapper-2 {
-
   max-width: 35%;
   text-align: left;
-  margin-bottom: auto;
-  transform: rotate(-90deg) translateX(-150px);
+
+  transform: rotate(-90deg) translateX(-196px);
   padding-bottom: 200px;
   padding-top: 100px;
   border-bottom: 1px solid #000;
@@ -589,9 +609,18 @@ header {
   color: #AD4533;
 }
 
+
+.big-concept-4::after{
+  content: "";
+  position: absolute;
+  background-color: #000;
+  height: 1px;
+  width: 689px;
+  top: 100px;
+  display: block;
+}
 .access-img-1 {
   width: 30%;
-  margin-left: 30%;
 }
 
 .access-img-1 img:nth-child(2) {
@@ -602,13 +631,15 @@ header {
 
 .access-img-2 {
   width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
   margin-left: 70px;
 }
 
 .access-img-2 iframe {
   width: 100%;
   height: 566px;
-  margin-top: 40%;
 }
 
 .address-wrapper {
@@ -632,10 +663,7 @@ header {
   font-size: 16px;
   line-height: 20px;
   /* or 125% */
-
-
   color: #070707;
-
 }
 
 .tel {
@@ -644,9 +672,7 @@ header {
   font-weight: 400;
   font-size: 40px;
   line-height: 84px;
-
   color: #070707;
-
 }
 
 #reserve {
@@ -657,21 +683,15 @@ header {
   padding-top: 200px;
 }
 
-.big-concept-wrapper-3 {
-  max-width: 550px;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 155px;
-  transform: translateX(11px);
-
+.big-concept-wrapper-4{
+  text-align: left;
+  margin:0;
+  margin:0 auto;
+max-width: 555px;
   position: relative;
 }
 
 .big-concept-5 {
-  position: absolute;
-  top: 50px;
-  left: -43px;
-  right: 0;
   border-bottom: 1px solid #fff;
   padding-bottom: 100px;
   font-family: 'Noto Sans Arabic';
